@@ -75,7 +75,14 @@ b:hover {
 	margin-bottom: 63px;
 }
 
-#main {
+
+#main{
+	margin: 0 auto;
+	max-width: 786px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+/* #main {
 		padding-left: 200px;
 		padding-right: 200px;
 	}
@@ -85,7 +92,7 @@ b:hover {
 		padding-left: 30px;
 		padding-right: 30px;
 	}
-}
+} */
 
 hr {
 	margin-top: 60px;
