@@ -83,6 +83,15 @@ b:hover {
 	padding-right: 10px;
 }
 
+@media only screen and (max-width:700px) {
+	#main{
+		margin: 0 auto;
+		max-width: 700px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
 hr {
 	margin-top: 60px;
 	margin-bottom: 42px;
