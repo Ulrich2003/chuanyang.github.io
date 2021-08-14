@@ -1,17 +1,17 @@
 @font-face {
 	/* 小标题字体 */
 	font-family:'Futura';
-	src: url('../font/Futura.ttf');
+	src: url('../../chuanyang.github.io/font/Futura.ttf');
 }
 @font-face {
 	/* 正文字体 */
 	font-family:'Optima';
-	src: url('../font/Optima.ttf');
+	src: url('../../chuanyang.github.io/font/Optima.ttf');
 }
 @font-face {
 	/* 大标题 + 粗体字体 */
 	font-family:'Helvetica';
-	src: url('../font/Helvetica.ttf');
+	src: url('../../chuanyang.github.io/font/Helvetica.ttf');
 }
 
 @media (min-width:700px) {
