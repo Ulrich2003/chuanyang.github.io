@@ -123,3 +123,10 @@ a:active {
 }
 
 /*a标签鼠标按下mousedown时的样式*/
+
+@media only screen and (max-width:1600px) {
+	#main{
+		font-size: 90%;
+		max-width: 648px;
+	}
+}
