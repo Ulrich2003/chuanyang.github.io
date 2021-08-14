@@ -2,10 +2,76 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<!-- let the a tag open in new window -->
+		<base target="_blank" />
+		<link rel="icon" href="img/coffee.ico" />
 		<title>ChuanYang Chen</title>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+			integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+			integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+		</script>
 		<script src="js/vue.js" type="text/javascript" charset="utf-8"></script>
+		<!-- input global .css file-->
+		<link rel="stylesheet" type="text/css" href="css/global.css">
 	</head>
 	<body>
-		
+		<div align="center">
+			<img id="logo" src="img/coffee.png" />
+		</div>
+		<div class="container-fluid row">
+			<!-- main -->
+			<div id="main" class="col-md-8 col-md-offset-2 col-sm-12">
+				<!-- <div class="col-md-8 col-md-offset-2 col-sm-12"> -->
+				<h1>Hi, I'm ChuanYang Chen</h1>
+				<h6>(YuPang Chen)</h6>
+				<br>
+				<div>
+					I'm a software engineer and a Christian, currently living in Guangdong, China. I like
+					photography and vocal music. I code in C++, Java and design in Lightroom, DaVinci...
+				</div>
+				
+				<h2>Recent Blog</h2>
+				<ul>
+					<li v-for="i in recentBlog" v-html="i">{{i}}</li>
+				</ul>
+				
+				<h2>Recent Projects</h2>
+				<ul>
+					<li v-for="i in recentProjects" v-html="i">{{i}}</li>
+				</ul>
+				
+				<h2>Other Links</h2>
+				<ul>
+					<li v-for="i in OtherLinks" v-html="i">{{i}}</li>
+				</ul>
+				
+				<hr/>
+				<span><a href="mailto:whistler2003@outlook.com"><b>Say hi</b></a> to ChuanYang Chen</span>
+			</div>
+			<!-- </div> -->
+		</div>
 	</body>
+	<script>
+		var main = new Vue({
+			el: "#main",
+			data: {
+				recentBlog: ["<b>Resume</b> - My skills and work experience",
+					"<b>Efficiency</b> - Links to all the stuff I use as developer and designer"
+				],
+				recentProjects: [
+					"<a href='https://blog.csdn.net/weixin_45525653/article/details/109015696?spm=1001.2014.3001.5501'><b>2020 Practical Project</b></a> - Connectivity and Eulerian discriminant system for n-order graphs"
+				],
+				OtherLinks:["<a href='https://blog.csdn.net/weixin_45525653?spm=1001.2014.3001.5343'><b>CSDN</b></a> - My code blog platform",
+							"<a href='https://github.com/Ulrich2003'><b>GitHub</b></a> - I'll post some practical projects",
+							"<a href='https://unsplash.com/@chuanyangme'><b>Unsplash</b></a> - My photos on Unsplash (free license to use and download)",
+							"<a href='https://chenyupang.tuchong.com/'><b>TuChong</b></a> - Some non-commercial photography",
+							"<a href='https://www.linkedin.com/in/yupang-chen-b864991a6/'><b>LinkedIn</b></a>"
+							]
+			}
+		})
+	</script>
 </html>

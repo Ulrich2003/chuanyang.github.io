@@ -1,0 +1,104 @@
+@font-face {
+	/* 小标题字体 */
+	font-family:'Futura';
+	src: url('../font/Futura.ttf');
+}
+@font-face {
+	/* 正文字体 */
+	font-family:'Optima';
+	src: url('../font/Optima.ttf');
+}
+@font-face {
+	/* 大标题 + 粗体字体 */
+	font-family:'Helvetica';
+	src: url('../font/Helvetica.ttf');
+}
+
+@media (min-width:700px) {
+	body{
+		font-size: 21px;
+		color: rgba(0,0,0,0.88);
+		line-height: 2;
+		font-family: 'Optima';
+	}
+	h6{
+		font-family: "Helvetica";
+		font-size: 20px;
+		color: #141414;
+		margin-bottom: 0;
+	}
+	
+	h1{
+		font-family: "Helvetica";
+		font-weight: bold;
+		font-size: 42px;
+		color: #141414;
+		margin: 0;
+	}
+	h2{
+		line-height: 1.5;
+		font-family: 'Futura';
+		/* font-weight: bold; */
+		color: #6998c9;
+		font-size: 27px;
+		margin-top: 40px;
+		margin-bottom: 21px;
+	}
+	b{
+		padding-left: 1px;
+		padding-right: 1px;
+		border-radius: 15px;
+		font-family: 'Helvetica';
+		display: inline-block;
+		    background: linear-gradient(rgb(224, 214, 235), rgb(224, 214, 235)) no-repeat;
+		    background-size: 100% 3px;
+		    background-position: 0 1.5em;
+		    /* text-shadow: 0.05em 0 rgb(224, 214, 235), -0.05em 0 rgb(224, 214, 235); */
+	}
+	b:hover{
+		background-color: rgb(224,214,235);
+		 -webkit-transition: all 0.08s linear;
+		    -moz-transition: all 0.08s linear;
+		    -o-transition: all 0.08s linear;
+		    transition: all 0.08s linear;
+	}
+	#logo{
+		width: 50px;
+		margin-top: 63px;
+		margin-bottom: 63px;
+	}
+	#main{
+		padding-left: 200px;
+		padding-right: 200px;
+	}
+	hr{
+		margin-top: 60px;
+		margin-bottom: 42px;
+		background-color: #f5f3f7;
+		height: 3px;
+	}
+	a{
+		color: rgba(0,0,0,0.88);
+		text-decoration: none;
+	}
+	a:hover{
+		text-decoration:none;
+		cursor:pointer;
+		color: rgba(0,0,0,0.88);
+	}/*a标签鼠标经过mouseover时的样式*/
+	a:link{
+		color: rgba(0,0,0,0.88);
+		text-decoration:none;
+		 cursor:pointer;
+	} /*a标签未访问时的样式*/
+	a:visited{
+		color: rgba(0,0,0,0.88);
+		text-decoration: overline ;
+		cursor:pointer;
+	}/*a标签访问过之后样式*/
+	a:active{
+		color: rgba(0,0,0,0.88);
+		text-decoration:overline;
+		cursor:pointer;
+	}/*a标签鼠标按下mousedown时的样式*/
+}
