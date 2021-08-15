@@ -1,0 +1,21 @@
+/* 括号专用 */
+h6{
+	display: inline;
+	font-size: 21px;
+	color: dimgrey;
+	line-height: 2;
+	font-family: 'Optima';
+	
+}
+
+b{
+	color: #5b509a;
+}
+img{
+	width: 100%;
+}
+
+#main{
+	font-weight: bold;
+}
+
