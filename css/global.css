@@ -50,24 +50,13 @@ h2 {
 }
 
 b {
-	padding-left: 1px;
-	padding-right: 1px;
-	border-radius: 15px;
-	font-family: 'Helvetica';
+	font-family: 'Futura';
 	display: inline-block;
 	background: linear-gradient(rgb(224, 214, 235), rgb(224, 214, 235)) no-repeat;
 	background-size: 100% 3px;
 	background-position: 0 1.5em;
-	/* text-shadow: 0.05em 0 rgb(224, 214, 235), -0.05em 0 rgb(224, 214, 235); */
 }
 
-b:hover {
-	background-color: rgb(224, 214, 235);
-	-webkit-transition: all 0.08s linear;
-	-moz-transition: all 0.08s linear;
-	-o-transition: all 0.08s linear;
-	transition: all 0.08s linear;
-}
 
 #logo {
 	width: 50px;
@@ -92,6 +81,8 @@ hr {
 }
 
 a {
+	padding-left: 1px;
+	padding-right: 1px;
 	color: rgba(0, 0, 0, 0.88);
 	text-decoration: none;
 }
@@ -100,6 +91,11 @@ a:hover {
 	text-decoration: none;
 	cursor: pointer;
 	color: rgba(0, 0, 0, 0.88);
+	background-color: rgb(224, 214, 235);
+	-webkit-transition: all 0.09s linear;
+	-moz-transition: all 0.09s linear;
+	-o-transition: all 0.09s linear;
+	transition: all 0.09s linear;
 }
 
 /*a标签鼠标经过mouseover时的样式*/
