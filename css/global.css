@@ -1,19 +1,19 @@
 @font-face {
 	/* 小标题字体 */
 	font-family: 'Futura';
-	src: url('../../chuanyang.github.io/font/Futura.ttf');
+	src: url('../font/Futura.ttc');
 }
 
 @font-face {
 	/* 正文字体 */
 	font-family: 'Optima';
-	src: url('../../chuanyang.github.io/font/Optima.ttf');
+	src: url('../font/Optima.ttc');
 }
 
 @font-face {
 	/* 大标题 + 粗体字体 */
 	font-family: 'Helvetica';
-	src: url('../../chuanyang.github.io/font/Helvetica.ttf');
+	src: url('../font/Helvetica.ttc');
 }
 
 
