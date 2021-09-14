@@ -1,2 +1,2 @@
-# chuanyang.github.io
-Code repository for personal website
+# Welcome
+www.chuanyangchen.ink
