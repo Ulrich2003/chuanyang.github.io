@@ -1,13 +1,13 @@
 @font-face {
 	/* 小标题字体 */
 	font-family: 'Futura';
-	src: url('../font/Futura.ttc');
+	src: url('https://vichien-public.oss-cn-guangzhou.aliyuncs.com/chuanyangchen/font/Futura.ttc');
 }
 
 @font-face {
 	/* 正文字体 */
 	font-family: 'Optima';
-	src: url('../font/Optima.ttc');
+	src: url('https://vichien-public.oss-cn-guangzhou.aliyuncs.com/chuanyangchen/font/Optima.ttc');
 }
 
 body {
