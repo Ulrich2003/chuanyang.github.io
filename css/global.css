@@ -17,6 +17,10 @@ body {
 	font-family: 'Optima';
 }
 
+li{
+	margin-bottom: 9px;
+}
+
 h6 {
 	/* font-family: "Helvetica"; */
 	font-family: 'Futura';
@@ -27,7 +31,7 @@ h6 {
 
 h1 {
 	/* font-family: "Helvetica"; */
-	font-family: 'Futura';
+	/* font-family: 'Futura'; */
 	font-weight: bold;
 	font-size: 38px;
 	color: #141414;
@@ -45,7 +49,7 @@ h2 {
 }
 
 b {
-	font-family: 'Futura';
+	font-weight: 600;
 	display: inline-block;
 	background: linear-gradient(rgb(224, 214, 235), rgb(224, 214, 235)) no-repeat;
 	background-size: 100% 3px;
@@ -116,7 +120,7 @@ a:active {
 
 /*a标签鼠标按下mousedown时的样式*/
 
-@media only screen and (max-width:1400px) {
+@media only screen and (max-width:750px) {
 	#main{
 		line-height: 34px;
 		font-size: 85%;
@@ -134,5 +138,32 @@ a:active {
 	}
 	h2{
 		font-size: 23px;
+	}
+	li{
+		margin-bottom: 8.5px;
+	}
+}
+
+@media only screen and (min-width:1600px) {
+	#main{
+		line-height: 42px;
+		/* font-size: 85%; */
+		max-width: 840px;
+		padding-left: 42px;
+		padding-right: 42px;
+		padding-bottom: 63px;
+	}
+	#logo {
+		margin-top: 40px;
+		margin-bottom: 63px;
+	}
+	h1{
+		font-size: 42px;
+	}
+	h2{
+		font-size: 27px;
+	}
+	li{
+		margin-bottom: 10.5px;
 	}
 }
