@@ -1,0 +1,169 @@
+@font-face {
+	/* 小标题字体 */
+	font-family: 'Futura';
+	src: url('https://vichien-public.oss-cn-guangzhou.aliyuncs.com/chuanyangchen/font/Futura.ttc');
+}
+
+@font-face {
+	/* 正文字体 */
+	font-family: 'Optima';
+	src: url('https://vichien-public.oss-cn-guangzhou.aliyuncs.com/chuanyangchen/font/Optima.ttc');
+}
+
+body {
+	font-size: 21px;
+	color: rgba(0, 0, 0, 0.88);
+	line-height: 2;
+	font-family: 'Optima';
+}
+
+li{
+	margin-bottom: 9px;
+}
+
+h6 {
+	/* font-family: "Helvetica"; */
+	font-family: 'Futura';
+	font-size: 20px;
+	color: #141414;
+	margin-bottom: 0;
+}
+
+h1 {
+	/* font-family: "Helvetica"; */
+	/* font-family: 'Futura'; */
+	font-weight: bold;
+	font-size: 38px;
+	color: #141414;
+	margin: 0;
+}
+
+h2 {
+	line-height: 1.5;
+	font-family: 'Futura';
+	/* font-weight: bold; */
+	color: #6998c9;
+	font-size: 27px;
+	margin-top: 40px;
+	margin-bottom: 21px;
+}
+
+b {
+	font-weight: 600;
+	display: inline-block;
+	background: linear-gradient(rgb(224, 214, 235), rgb(224, 214, 235)) no-repeat;
+	background-size: 100% 3px;
+	background-position: 0 1.5em;
+}
+
+
+#logo {
+	width: 50px;
+	margin-top: 63px;
+	margin-bottom: 63px;
+}
+
+
+#main{
+	margin: 0 auto;
+	max-width: 720px;
+	padding-left: 36px;
+	padding-right: 36px;
+	padding-bottom: 63px;
+}
+
+hr {
+	margin-top: 60px;
+	margin-bottom: 42px;
+	background-color: #f5f3f7;
+	height: 3px;
+}
+
+a {
+	padding-left: 1px;
+	padding-right: 1px;
+	color: rgba(0, 0, 0, 0.88);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: rgba(0, 0, 0, 0.88);
+	background-color: rgb(224, 214, 235);
+	-webkit-transition: all 0.09s linear;
+	-moz-transition: all 0.09s linear;
+	-o-transition: all 0.09s linear;
+	transition: all 0.09s linear;
+}
+
+/*a标签鼠标经过mouseover时的样式*/
+a:link {
+	color: rgba(0, 0, 0, 0.88);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/*a标签未访问时的样式*/
+a:visited {
+	color: rgba(0, 0, 0, 0.88);
+	text-decoration: overline;
+	cursor: pointer;
+}
+
+/*a标签访问过之后样式*/
+a:active {
+	color: rgba(0, 0, 0, 0.88);
+	text-decoration: overline;
+	cursor: pointer;
+}
+
+/*a标签鼠标按下mousedown时的样式*/
+
+@media only screen and (max-width:750px) {
+	#main{
+		line-height: 34px;
+		font-size: 85%;
+		max-width: 648px;
+		padding-left: 27px;
+		padding-right: 27px;
+		padding-bottom: 63px;
+	}
+	#logo {
+		margin-top: 40px;
+		margin-bottom: 63px;
+	}
+	h1{
+		font-size: 34px;
+	}
+	h2{
+		font-size: 23px;
+	}
+	li{
+		margin-bottom: 8.5px;
+	}
+}
+
+@media only screen and (min-width:1600px) {
+	#main{
+		line-height: 42px;
+		/* font-size: 85%; */
+		max-width: 840px;
+		padding-left: 42px;
+		padding-right: 42px;
+		padding-bottom: 63px;
+	}
+	#logo {
+		margin-top: 40px;
+		margin-bottom: 63px;
+	}
+	h1{
+		font-size: 42px;
+	}
+	h2{
+		font-size: 27px;
+	}
+	li{
+		margin-bottom: 10.5px;
+	}
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- let the a tag open in new window -->
+		<base target="_blank" />
+		<link rel="icon" href="../img/coffee.ico" />
+		<title>About this site</title>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+			integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+			integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+		</script>
+		<script src="../js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- input global .css file-->
+		<link rel="stylesheet" type="text/css" href="../css/global.css">
+		<link rel="stylesheet" type="text/css" href="../css/doc.css" />
+	</head>
+	<body>
+		<div align="center">
+			<img id="logo" src="../img/coffee.png" />
+		</div>
+		<div id="main">
+			<h1>Why did I create this site</h1>
+			<br />
+			<div align="center">
+				<img src="https://vichien-public.oss-cn-guangzhou.aliyuncs.com/chuanyangchen/img/pages_img/About%20this%20site%20p1.jpg" />
+			</div>
+			<br />
+			<div>When I saw my predecessors <a href="https://www.huchen.dev"><b>Hu Chen's</b></a> personal site, I found the meaning of my hard study. It took me about two days to knock the html and css code, and only then set up the framework of the project. To be honest, this website is not innovative at all, I just copied the predecessor’s website style <h6>(including typography and fonts)</h6> because I think the predecessor’s site looks really great! Although he doesn’t know me <h6>(I know him from <a href="https://unsplash.com/@huchenme"><b>Unsplash</b></a>)</h6></div>
+			<br />
+			<div>My purpose of building this website:</div>
+			<ul>
+				<li v-for="i in purpose" v-html="i">{{i}}</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		var main = new Vue({
+			el: "#main",
+			data: {
+				purpose: ["Become my first front-end project that I can show",
+				"Record my growth and see my progress in programming",
+				"To make more friends <h6>(Feel free to <a href='mailto:whistler2003@outlook.com'><b>contact me</b></a> if you wish, we can discuss the problem with programming)</h6>",
+				"Let others know me through this website"
+				]
+			}
+		})
+	</script>
+</html>

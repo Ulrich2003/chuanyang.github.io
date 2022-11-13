@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- let the a tag open in new window -->
+		<base target="_blank" />
+		<link rel="icon" href="img/coffee.ico" />
+		<title>ChuanYang Chen</title>
+		<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+		<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+			integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+		<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+			integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+		</script>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<!-- input global .css file-->
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+	</head>
+	<body>
+		<div align="center">
+			<img id="logo" src="img/coffee.png" />
+		</div>
+		<div id="main">
+			<h1>Hi, I'm ChuanYang Chen</h1>
+			<h6>(YuPang Chen)</h6>
+			<br>
+			<div>
+				I'm a frontend developer and a Christian, currently living in Guangdong. My hobbies are photography and vocal music. At work, I code in JavaScript (Vue) and design in Sketch, Figma
+			</div>
+
+			<h2>Recent Blogs</h2>
+			<ul>
+				<li v-for="i in recentBlog" v-html="i">{{i}}</li>
+			</ul>
+
+			<h2>Recent Projects</h2>
+			<ul>
+				<li v-for="i in recentProjects" v-html="i">{{i}}</li>
+			</ul>
+
+			<h2>Other Links</h2>
+			<ul>
+				<li v-for="i in OtherLinks" v-html="i">{{i}}</li>
+			</ul>
+
+			<hr />
+			<span><a href="mailto:whistler2003@outlook.com"><b>Say hi</b></a> to ChuanYang Chen</span>
+
+		</div>
+	</body>
+	<script>
+		var main = new Vue({
+			el: "#main",
+			data: {
+				recentBlog: [
+					"<a href='pages/About_this_site.html'><b>About this site</b></a> - Why did I create this site",
+					// "<a href='pages/oops.html'><b>Resume (EN)</b></a> - My skills and work experience",
+					"<a href='pages/oops_chinese.html'><b>Resume (中文)</b></a> - My skills and work experience",
+					//"<a href='https://chlorinated-banon-e74.notion.site/07b4687597a24e899587e60741af64e0'><b>Internship experience</b></a> - Work in Country Garden",
+					"<a href='https://padlet.com/chuanyangme/active'><b>Active</b></a> - Keep track of something interesting in my life 🚴"
+				],
+				recentProjects: [
+					"<a href='https://github.com/Ulrich2003/IOS-project-front-end-page'><b>Smart Medical Vision</b></a> - An app that runs on iOS. I have won many awards through this project",
+					"<a href='https://github.com/Ulrich2003/Android-schoolwork-entertainment-app-imitating-wechat'><b>Android Develops Project</b></a> - The imitation of Wechat",
+					"<a href='https://github.com/Ulrich2003/iMMerse_vanGogh_Works'><b>iMMerse VanGogh Works</b></a> - A digital museum based on Uni-app and WeChat Mini Programs, is still in coding",
+					"<a href='https://blog.csdn.net/weixin_45525653/article/details/109015696?spm=1001.2014.3001.5501'><b>2020 Practical Project</b></a> - Connectivity and Eulerian discriminant system for n-order graphs",
+					"<a href='https://github.com/Ulrich2003/IoT-solutions-Demo'><b>2021 IoT Solutions</b></a> - Complete 4 enterprise solutions in one week"
+				],
+				OtherLinks: [
+					"<a href='https://blog.csdn.net/weixin_45525653?spm=1001.2014.3001.5343'><b>CSDN</b></a> 🖥️ - My code blog platform",
+					"<a href='https://github.com/Ulrich2003'><b>GitHub</b></a> 💡 - I'll post some practical projects",
+					"<a href='https://unsplash.com/@chuanyangme'><b>Unsplash</b></a> 🌋 - My photos on Unsplash (free license to use and download)",
+					"<a href='https://www.instagram.com/chuanyang_chen/'><b>Instagram</b></a> 📷",
+					"<a href='https://www.linkedin.com/in/yupang-chen-b864991a6/'><b>LinkedIn</b></a> 💁‍♂️"
+				]
+			}
+		})
+	</script>
+</html>
